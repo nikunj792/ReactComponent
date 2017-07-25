@@ -3,7 +3,7 @@ var React =require('react');
 var ReactMessage = React.createClass({
 	getDefaultProps: function(){
 			return {
-				company:'Wipro',
+				company:'Wipro Tech',
 				address:'Pritech',
 			};
 		},
