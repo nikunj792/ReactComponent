@@ -32,7 +32,7 @@ var ReactForm = React.createClass({
 					this.refs.address.value='';
 					profile.company =company;
 					profile.address=address;
-					this.state.handleProfile(profile);
+					this.state.handleProfile(profile);	
 				}
 			else
 				{
