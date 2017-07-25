@@ -33,12 +33,6 @@ var ReactForm = React.createClass({
 					profile.company =company;
 					profile.address=address;
 					this.state.handleProfile(profile);
-					/* this.setState({
-					profile.company:company,
-						profile.address:address 
-						 alert(company);
-						alert(address); 
-					}); */
 				}
 			else
 				{
