@@ -32,7 +32,10 @@ var ReactForm = React.createClass({
 					this.refs.address.value='';
 					profile.company =company;
 					profile.address=address;
-					this.state.handleProfile(profile);	
+					this.setState({
+									company:company,
+									address:address
+								});
 				}
 			else
 				{
@@ -44,14 +47,6 @@ var ReactForm = React.createClass({
 				fname:'Nikunj',
 				lname:'Agarwal'
 			};
-		},
-		handleProfile:function(profile){
-			var company = profile.company;
-			var address = profile.address;
-			this.setState({
-				company:company,
-				address:address
-			});
 		},
 	render : function(){
 		var firstName =this.state.fname;
@@ -77,7 +72,7 @@ var ReactForm = React.createClass({
 		<div><input type="text" ref="address"/></div>
 		<div><button>Submit</button></div>
 		</form>
-		<ReactMessage onProfile={this.handleProfile}/>
+		<ReactMessage value={this.state}/>
 		</div>
 		);
 	}
