@@ -1,16 +1,10 @@
 var React =require('react');
 
 var ReactMessage = React.createClass({
-	getDefaultProps: function(){
-			return {
-				company:'Wipro Tech',
-				address:'Pritech',
-			};
-		},
-		
 	render : function(){
-		var company=this.props.company;
-		var address=this.props.address;
+		console.log("222@@",this.props);
+		var company=this.props.value.company;
+		var address=this.props.value.address;
 		return(
 		<div>
 			<h1>Company :: {company} </h1>
