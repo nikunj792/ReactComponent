@@ -4,6 +4,7 @@ module.exports = {
     path: __dirname,
     filename: './public/bundle.js'
   },
+	watch:true,
   resolve: {
     root: __dirname,
     alias: {
@@ -23,5 +24,6 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  }
+  },
+	devtool:'cheap-module-eval-source-map'
 };
